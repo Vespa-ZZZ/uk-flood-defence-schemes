@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project.json?_view=full&_limit=2000&_offset=0",
+    "comment": "Asset Management API, alpha",
+    "hasFormat": [
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.html?_limit=2000&_offset=0&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.csv?_limit=2000&_offset=0&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.geojson?_limit=2000&_offset=0&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.rdf?_limit=2000&_offset=0&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.ttl?_limit=2000&_offset=0&_view=full"
+    ],
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licenseName": "OGL 3",
+    "limit": 2000,
+    "publisher": "Environment Agency",
+    "version": "0.1"
+  },
+  "items": [
+    {
+      "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project/ACC451E/000A/633A",
+      "area": {
+        "@id": "http://environment.data.gov.uk/registry/def/ea-organization/ea_areas/52",
+        "label": "East Anglia"
+      },
+      "authorityType": "Environment Agency",
+      "easting": 560040,
+      "hasRfcc": {
+        "@id": "http://environment.data.gov.uk/asset-management/id/regional-flood-committee/anglian-great-ouse",
+        "label": "Anglian Great Ouse RFCC"
+      },
+      "homesBetterProtected": 39,
+      "inRegion": {
+        "@id": "http://statistics.data.gov.uk/id/statistical-geography/E12000006",
+        "officialname": "East of England"
+      },
+      "isPartOf": {
+        "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CapitalProgramme2015To2023"
+      },
+      "label": "Ten Mile Bank Emergency repairs",
+      "northing": 296020,
+      "notation": "ACC451E/000A/633A",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CompletedCapitalProject"
+        }
+      ]
+    },
+    {
+      "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project/2020/21-002721",
+      "area": {
+        "@id": "http://environment.data.gov.uk/registry/def/ea-organization/ea_areas/39",
+        "label": "Solent and South Downs"
+      },
+      "authorityType": "Eastbourne Borough Council",
+      "easting": 561817,
+      "hasRfcc": {
+        "@id": "http://environment.data.gov.uk/asset-management/id/regional-flood-committee/southern",
+        "label": "Southern RFCC"
+      },
+      "homesBetterProtected": 324,
+      "inRegion": {
+        "@id": "http://statistics.data.gov.uk/id/statistical-geography/E12000008",
+        "officialname": "South East"
+      },
+      "isPartOf": {
+        "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CapitalProgramme2024To2025"
+      },
+      "label": "Eastbourne Beach Management - 4 yr Plan (2021-2022 - 2024-2025)",
+      "northing": 98889,
+      "notation": "2020/21-002721",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CompletedCapitalProject"
+        }
+      ]
+    },
+    {
+      "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project/2020/21-010346",
+      "area": {
+        "@id": "http://environment.data.gov.uk/registry/def/ea-organization/ea_areas/55",
+        "label": "Kent South London and East Sussex"
+      },
+      "authorityType": "Environment Agency",
+      "easting": 564289,
+      "hasRfcc": {
+        "@id": "http://environment.data.gov.uk/asset-management/id/regional-flood-committee/thames",
+        "label": "Thames RFCC"
+      },
+      "homesBetterProtected": 291,
+      "inRegion": [
+        {
+          "@id": "http://statistics.data.gov.uk/id/statistical-geography/E12000007",
+          "officialname": "London"
+        },
+        {
+          "@id": "http://statistics.data.gov.uk/id/statistical-geography/E12000008",
+          "officialname": "South East"
+        }
+      ],
+      "isPartOf": {
+        "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CapitalProgramme2024To2025"
+      },
+      "label": "Higher Risk Debris Screens Thames",
+      "northing": 158086,
+      "notation": "2020/21-010346",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CompletedCapitalProject"
+        }
+      ]
+    },
+    {
+      "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project/2024/25-014018",
+      "area": {
+        "@id": "http://environment.data.gov.uk/registry/def/ea-organization/ea_areas/34",
+        "label": "Yorkshire"
+      },
+      "authorityType": "Hull City Council",
+      "easting": 511480,
+      "hasRfcc": {
+        "@id": "http://environment.data.gov.uk/asset-management/id/regional-flood-committee/yorkshire",
+        "label": "Yorkshire RFCC"
+      },
+      "homesBetterProtected": 2,
+      "inRegion": {
+        "@id": "http://statistics.data.gov.uk/id/statistical-geography/E12000003",
+        "officialname": "Yorkshire and The Humber"
+      },
+      "isPartOf": {
+        "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CapitalProgramme2024To2025"
+      },
+      "label": "SuDS in Schools Hull",
+      "northing": 430000,
+      "notation": "2024/25-014018",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/asset-management/def/capital-programme/CompletedCapitalProject"
+        }
+      ]
+    }
+  ]
+}

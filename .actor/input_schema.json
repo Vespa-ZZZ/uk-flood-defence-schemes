@@ -1,0 +1,48 @@
+{
+    "title": "England Flood Defence Schemes",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "areas": {
+            "title": "Environment Agency areas",
+            "type": "array",
+            "description": "Include any of these published EA area names or codes. For example, use East Anglia or 52. Names are matched without regard to case. Leave empty to include every area.",
+            "editor": "stringList",
+            "prefill": ["East Anglia"]
+        },
+        "keywords": {
+            "title": "Scheme name contains",
+            "type": "array",
+            "description": "Include schemes whose names contain at least one of these words or phrases, ignoring case.",
+            "editor": "stringList"
+        },
+        "minHomesBetterProtected": {
+            "title": "Minimum homes better protected",
+            "type": "integer",
+            "description": "Only include schemes with a published count at or above this value. Set it to zero to include all published counts and exclude missing counts.",
+            "minimum": 0
+        },
+        "maxItems": {
+            "title": "Maximum output rows",
+            "type": "integer",
+            "description": "Maximum number of schemes to save in this run. In monitoring mode, eligible rows beyond the limit remain eligible for later runs.",
+            "minimum": 1,
+            "maximum": 300,
+            "default": 100
+        },
+        "onlyNew": {
+            "title": "Monitor new and changed schemes",
+            "type": "boolean",
+            "description": "Report each matching scheme on first sight and when its published fields change compared with the last saved version.",
+            "default": false
+        },
+        "stateKey": {
+            "title": "Monitoring state key",
+            "type": "string",
+            "description": "Reuse this key for related runs. Use a different key for a separate baseline. Enter 1 to 50 letters, digits, underscores or hyphens.",
+            "editor": "textfield",
+            "pattern": "^[a-zA-Z0-9_-]{1,50}$",
+            "default": "default"
+        }
+    }
+}

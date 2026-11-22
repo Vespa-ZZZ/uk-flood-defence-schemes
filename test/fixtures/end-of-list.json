@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "@id": "http://environment.data.gov.uk/asset-management/id/completed-capital-project.json?_view=full&_limit=1&_offset=1211",
+    "comment": "Asset Management API, alpha",
+    "hasFormat": [
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.geojson?_limit=1&_offset=1211&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.ttl?_limit=1&_offset=1211&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.rdf?_limit=1&_offset=1211&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.csv?_limit=1&_offset=1211&_view=full",
+      "http://environment.data.gov.uk/asset-management/id/completed-capital-project.html?_limit=1&_offset=1211&_view=full"
+    ],
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licenseName": "OGL 3",
+    "limit": 1,
+    "offset": 1211,
+    "publisher": "Environment Agency",
+    "version": "0.1"
+  },
+  "items": []
+}

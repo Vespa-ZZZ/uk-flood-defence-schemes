@@ -1,0 +1,40 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Completed schemes",
+            "transformation": {
+                "fields": [
+                    "projectId",
+                    "name",
+                    "eaArea",
+                    "capitalProgrammeId",
+                    "riskManagementAuthorityType",
+                    "homesBetterProtected",
+                    "easting",
+                    "northing",
+                    "changeType",
+                    "sourceUrl",
+                    "source"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "projectId": { "label": "Project ID" },
+                    "name": { "label": "Scheme" },
+                    "eaArea": { "label": "EA area" },
+                    "capitalProgrammeId": { "label": "Capital programme" },
+                    "riskManagementAuthorityType": { "label": "Lead authority or type" },
+                    "homesBetterProtected": { "label": "Homes better protected", "format": "number" },
+                    "easting": { "label": "Easting", "format": "number" },
+                    "northing": { "label": "Northing", "format": "number" },
+                    "changeType": { "label": "Change" },
+                    "sourceUrl": { "label": "Source record" },
+                    "source": { "label": "Attribution" }
+                }
+            }
+        }
+    }
+}

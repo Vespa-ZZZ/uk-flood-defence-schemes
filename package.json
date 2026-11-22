@@ -1,0 +1,19 @@
+{
+  "name": "uk-flood-defence-schemes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Completed flood and coastal risk management schemes in England from the Environment Agency.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6"
+  }
+}

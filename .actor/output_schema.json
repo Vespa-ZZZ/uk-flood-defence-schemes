@@ -1,0 +1,21 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Completed schemes",
+    "properties": {
+        "overview": {
+            "title": "Completed schemes (table)",
+            "type": "string",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        },
+        "results": {
+            "title": "Completed schemes (JSON)",
+            "type": "string",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        },
+        "runSummary": {
+            "title": "Run summary",
+            "type": "string",
+            "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/RUN_SUMMARY"
+        }
+    }
+}
