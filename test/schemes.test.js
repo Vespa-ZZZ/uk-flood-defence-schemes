@@ -363,3 +363,30 @@ test('removes local paths and stack lines from failures', () => {
     assert.equal(sanitize('Write failed at /tmp/test/project'), 'Write failed at <path>');
     assert.equal(sanitize('https://environment.data.gov.uk/asset-management'), 'https://environment.data.gov.uk/asset-management');
 });
+
+test('prechecks the dataset item budget and allows non-PPE output', async () => {
+    for (const [isPayPerEvent, budget] of [[true, 1], [true, 0], [false, 0]]) {
+        const configureActor = (actor, records) => {
+            actor.getChargingManager = () => ({
+                getPricingInfo: () => ({ isPayPerEvent }),
+                calculateMaxEventChargeCountWithinLimit(event) {
+                    assert.equal(event, 'apify-default-dataset-item');
+                    return budget - records.length;
+                },
+            });
+        };
+        const state = new Map();
+        const fake = fakeActor({ onlyNew: true }, state);
+        configureActor(fake.actor, fake.rows);
+        const expected = isPayPerEvent ? budget : 3;
+        const source = sourceOf(copies(3));
+        const { summary } = await execute(fake, source);
+        assert.equal(fake.status, 'success');
+        assert.equal(fake.rows.length, expected);
+        assert.equal(summary.pushed, expected);
+        assert.equal(summary.stopReason, isPayPerEvent ? 'spendingLimit' : null);
+        const next = fakeActor({ onlyNew: true }, state);
+        await execute(next, source);
+        assert.equal(next.rows.length, 3 - expected);
+    }
+});

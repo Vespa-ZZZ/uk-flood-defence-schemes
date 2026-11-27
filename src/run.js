@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
+import { pushDataWithinLimit } from './charging.js';
 import { API_URL, InputError, isObject, matches, pageUrl, parsePage, readInput, sanitize } from './schemes.js';
 
 const PAGE_SIZE = 2000;
@@ -155,7 +156,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
         let spendingLimitReached = false;
         for (let start = 0; start < selected.length; start += BATCH_SIZE) {
             const batch = selected.slice(start, start + BATCH_SIZE);
-            const chargeResult = await actor.pushData(batch.map(({ row }) => row));
+            const chargeResult = await pushDataWithinLimit(actor, batch.map(({ row }) => row));
             const stored = countStored(chargeResult, batch.length);
             if (store && stored > 0) {
                 for (const { row, hash } of batch.slice(0, stored)) seen.set(row.projectId, hash);
